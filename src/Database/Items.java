@@ -34,7 +34,31 @@ public class Items {
     // Method buraya yazılacak
 
     //---------------------------------------------------------------------------------------
+public static double ItemName(String itemName ){
+    double deger=0;
+    switch (itemName.toLowerCase()){
+        case "rose teddy bear" : deger=30;
+        break;
+        case  "iphone max" : deger=850.23;
+        break;
+        case "laptop mouse": deger =23.50;
+        break;
+        case "monitor" : deger= 90.23;
+        break;
+        case "charger" : deger=43.20;
+        break;
+        case "hdmi cable" : deger = 5.90;
+        break;
+        case "mug" : deger = 30;
+        break;
 
+    }
+
+    return deger;
+
+
+
+}
     //---------------------------------------------------------------------------------------
 
     /*
@@ -56,7 +80,24 @@ public class Items {
     // Method buraya yazılacak
 
     //---------------------------------------------------------------------------------------
-
+    public static double colorPrice(String color ){
+        double deger=0;
+        switch (color.toLowerCase()) {
+            case "red":
+                deger = 10;
+                break;
+            case "blue":
+                deger = 6;
+                break;
+            case "black":
+                deger = 4;
+                break;
+            case "white":
+                deger = 2;
+                break;
+        }
+        return deger;
+    }
     //---------------------------------------------------------------------------------------
 
     /*
@@ -74,6 +115,16 @@ public class Items {
      */
 
     // Method buraya yazılacak
+    public static double customText(String text ){
+        double deger=0;
+        if (text.length()>10)
+            deger =5;
+        else {
+            deger= 3;
+
+        }
+        return deger;
+    }
 
     //---------------------------------------------------------------------------------------
 

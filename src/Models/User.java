@@ -30,6 +30,15 @@ public class User {
         setCity(city);
         HelperFunctions.checkCity(city);
         HelperFunctions.checkZipCode(zipCode);
+        shippingTrackingNumber = HelperFunctions.generateShippingTrackingNumber(fullName,city,zipCode);
+    }
+
+    public String getShippingTrackingNumber() {
+        return shippingTrackingNumber;
+    }
+
+    public void setShippingTrackingNumber(String shippingTrackingNumber) {
+        this.shippingTrackingNumber = shippingTrackingNumber;
     }
 
     public String getFullName() {
@@ -48,21 +57,7 @@ public class User {
         this.city = city;
     }
 
-    public String getAddress() {
-        return address;
-    }
 
-    public void setAddress(String address) {
-        this.address = address;
-    }
-
-    public String getZipCode() {
-        return zipCode;
-    }
-
-    public void setZipCode(String zipCode) {
-        this.zipCode = zipCode;
-    }
 /*
 
         Bu class bir constructor içermeli ve gelen
@@ -91,7 +86,13 @@ public class User {
 
      */
 
+    public double getMyPrice() {
+        return myPrice;
+    }
 
+    public void setMyPrice(double Price) {
+        this.myPrice += Price;
+    }
 
     // toString methodunu değiştirmenize gerek yoktur, sadece görsel anlam ifade etmektedir
 
