@@ -25,12 +25,21 @@ public class User {
    private double myPrice;
    private String shippingTrackingNumber;
 
-    public User(String fullName, String city, String address, String zipCode) {
+    public User(String fullName, String address, String city , String zipCode) {
         setFullName(fullName);
         setCity(city);
+        setAddress(address);
         HelperFunctions.checkCity(city);
         HelperFunctions.checkZipCode(zipCode);
         shippingTrackingNumber = HelperFunctions.generateShippingTrackingNumber(fullName,city,zipCode);
+    }
+
+    public String getAddress() {
+        return address;
+    }
+
+    public void setAddress(String address) {
+        this.address = address;
     }
 
     public String getShippingTrackingNumber() {

@@ -92,7 +92,7 @@ public class HelperFunctions {
             isimKodu=fullanme.toUpperCase().charAt(0)+fullanme.toUpperCase().substring(boslukIndex,(boslukIndex+1))+
                     fullanme.toUpperCase().substring(ikinciBoslukIndex,(ikinciBoslukIndex+1));
         }
-        return cityUcHarf+zipcode+isimKodu;
+        return cityUcHarf.concat(zipcode).concat(isimKodu);
 
 
     }
