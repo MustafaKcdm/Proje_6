@@ -39,7 +39,7 @@ public static double ItemName(String itemName ){
     switch (itemName.toLowerCase()){
         case "rose teddy bear" : deger=30;
         break;
-        case  "iphone max" : deger=850.23;
+        case  "ıphone max" : deger=850.23;
         break;
         case "laptop mouse": deger =23.50;
         break;

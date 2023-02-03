@@ -30,8 +30,16 @@ public class User {
         setCity(city);
         setAddress(address);
         HelperFunctions.checkCity(city);
-        HelperFunctions.checkZipCode(zipCode);
+        this.zipCode= HelperFunctions.checkZipCode(zipCode);
         shippingTrackingNumber = HelperFunctions.generateShippingTrackingNumber(fullName,city,zipCode);
+    }
+
+    public String getZipCode() {
+        return zipCode;
+    }
+
+    public void setZipCode(String zipCode) {
+        this.zipCode = zipCode;
     }
 
     public String getAddress() {
